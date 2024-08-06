@@ -7,7 +7,8 @@ namespace MIMS_Skill_Competency.Repository
     public class SkillRepository : ISkillRepository
     {
         private readonly ApplicationDbContext _dbcontext;
-        public SkillRepository(ApplicationDbContext dbContext) {
+        public SkillRepository(ApplicationDbContext dbContext)
+        {
             _dbcontext = dbContext;
         }
         public ICollection<EmployeeSkill> getEmployeeSkills(SearchEmpSkill skl)

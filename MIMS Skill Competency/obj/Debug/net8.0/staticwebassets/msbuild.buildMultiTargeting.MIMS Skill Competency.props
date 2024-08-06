@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\MIMS Skill Competency.props" />
+</Project>

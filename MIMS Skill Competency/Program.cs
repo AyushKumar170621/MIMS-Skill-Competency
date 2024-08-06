@@ -1,6 +1,7 @@
 
 using MIMS_Skill_Competency.Data;
 using MIMS_Skill_Competency.Interfaces;
+using MIMS_Skill_Competency.Repository;
 
 namespace MIMS_Skill_Competency
 {
@@ -17,7 +18,7 @@ namespace MIMS_Skill_Competency
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
             builder.Services.AddSingleton<ApplicationDbContext>();
-            builder.Services.AddScoped<ISkillRepository,ISkillRepository>();
+            builder.Services.AddScoped<ISkillRepository,SkillRepository>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
