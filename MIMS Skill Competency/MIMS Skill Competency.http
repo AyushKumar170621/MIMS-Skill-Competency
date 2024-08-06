@@ -1,0 +1,6 @@
+@MIMS_Skill_Competency_HostAddress = http://localhost:5108
+
+GET {{MIMS_Skill_Competency_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

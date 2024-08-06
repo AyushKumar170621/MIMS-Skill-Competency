@@ -1,0 +1,160 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ayushk\\source\\repos\\MIMS Skill Competency\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FAC029DE-317B-492B-AB2D-F48674D5174C}|MIMS Skill Competency\\MIMS Skill Competency.csproj|c:\\users\\ayushk\\source\\repos\\mims skill competency\\mims skill competency\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{FAC029DE-317B-492B-AB2D-F48674D5174C}|MIMS Skill Competency\\MIMS Skill Competency.csproj|solutionrelative:mims skill competency\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAC029DE-317B-492B-AB2D-F48674D5174C}|MIMS Skill Competency\\MIMS Skill Competency.csproj|c:\\users\\ayushk\\source\\repos\\mims skill competency\\mims skill competency\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAC029DE-317B-492B-AB2D-F48674D5174C}|MIMS Skill Competency\\MIMS Skill Competency.csproj|solutionrelative:mims skill competency\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAC029DE-317B-492B-AB2D-F48674D5174C}|MIMS Skill Competency\\MIMS Skill Competency.csproj|c:\\users\\ayushk\\source\\repos\\mims skill competency\\mims skill competency\\repository\\skillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAC029DE-317B-492B-AB2D-F48674D5174C}|MIMS Skill Competency\\MIMS Skill Competency.csproj|solutionrelative:mims skill competency\\repository\\skillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAC029DE-317B-492B-AB2D-F48674D5174C}|MIMS Skill Competency\\MIMS Skill Competency.csproj|c:\\users\\ayushk\\source\\repos\\mims skill competency\\mims skill competency\\interfaces\\iskillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAC029DE-317B-492B-AB2D-F48674D5174C}|MIMS Skill Competency\\MIMS Skill Competency.csproj|solutionrelative:mims skill competency\\interfaces\\iskillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAC029DE-317B-492B-AB2D-F48674D5174C}|MIMS Skill Competency\\MIMS Skill Competency.csproj|c:\\users\\ayushk\\source\\repos\\mims skill competency\\mims skill competency\\models\\searchempskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAC029DE-317B-492B-AB2D-F48674D5174C}|MIMS Skill Competency\\MIMS Skill Competency.csproj|solutionrelative:mims skill competency\\models\\searchempskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAC029DE-317B-492B-AB2D-F48674D5174C}|MIMS Skill Competency\\MIMS Skill Competency.csproj|c:\\users\\ayushk\\source\\repos\\mims skill competency\\mims skill competency\\models\\employeeskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAC029DE-317B-492B-AB2D-F48674D5174C}|MIMS Skill Competency\\MIMS Skill Competency.csproj|solutionrelative:mims skill competency\\models\\employeeskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAC029DE-317B-492B-AB2D-F48674D5174C}|MIMS Skill Competency\\MIMS Skill Competency.csproj|c:\\users\\ayushk\\source\\repos\\mims skill competency\\mims skill competency\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAC029DE-317B-492B-AB2D-F48674D5174C}|MIMS Skill Competency\\MIMS Skill Competency.csproj|solutionrelative:mims skill competency\\models\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FAC029DE-317B-492B-AB2D-F48674D5174C}|MIMS Skill Competency\\MIMS Skill Competency.csproj|c:\\users\\ayushk\\source\\repos\\mims skill competency\\mims skill competency\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAC029DE-317B-492B-AB2D-F48674D5174C}|MIMS Skill Competency\\MIMS Skill Competency.csproj|solutionrelative:mims skill competency\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ayushk\\source\\repos\\MIMS Skill Competency\\MIMS Skill Competency\\appsettings.json",
+              "RelativeDocumentMoniker": "MIMS Skill Competency\\appsettings.json",
+              "ToolTip": "C:\\Users\\ayushk\\source\\repos\\MIMS Skill Competency\\MIMS Skill Competency\\appsettings.json",
+              "RelativeToolTip": "MIMS Skill Competency\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-08-06T09:21:00.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ayushk\\source\\repos\\MIMS Skill Competency\\MIMS Skill Competency\\Program.cs",
+              "RelativeDocumentMoniker": "MIMS Skill Competency\\Program.cs",
+              "ToolTip": "C:\\Users\\ayushk\\source\\repos\\MIMS Skill Competency\\MIMS Skill Competency\\Program.cs",
+              "RelativeToolTip": "MIMS Skill Competency\\Program.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAgwBgAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T09:19:26.553Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SkillRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ayushk\\source\\repos\\MIMS Skill Competency\\MIMS Skill Competency\\Repository\\SkillRepository.cs",
+              "RelativeDocumentMoniker": "MIMS Skill Competency\\Repository\\SkillRepository.cs",
+              "ToolTip": "C:\\Users\\ayushk\\source\\repos\\MIMS Skill Competency\\MIMS Skill Competency\\Repository\\SkillRepository.cs",
+              "RelativeToolTip": "MIMS Skill Competency\\Repository\\SkillRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T09:16:55.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SearchEmpSkill.cs",
+              "DocumentMoniker": "C:\\Users\\ayushk\\source\\repos\\MIMS Skill Competency\\MIMS Skill Competency\\Models\\SearchEmpSkill.cs",
+              "RelativeDocumentMoniker": "MIMS Skill Competency\\Models\\SearchEmpSkill.cs",
+              "ToolTip": "C:\\Users\\ayushk\\source\\repos\\MIMS Skill Competency\\MIMS Skill Competency\\Models\\SearchEmpSkill.cs",
+              "RelativeToolTip": "MIMS Skill Competency\\Models\\SearchEmpSkill.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T09:12:51.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Employee.cs",
+              "DocumentMoniker": "C:\\Users\\ayushk\\source\\repos\\MIMS Skill Competency\\MIMS Skill Competency\\Models\\Employee.cs",
+              "RelativeDocumentMoniker": "MIMS Skill Competency\\Models\\Employee.cs",
+              "ToolTip": "C:\\Users\\ayushk\\source\\repos\\MIMS Skill Competency\\MIMS Skill Competency\\Models\\Employee.cs",
+              "RelativeToolTip": "MIMS Skill Competency\\Models\\Employee.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T09:01:44.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmployeeSkill.cs",
+              "DocumentMoniker": "C:\\Users\\ayushk\\source\\repos\\MIMS Skill Competency\\MIMS Skill Competency\\Models\\EmployeeSkill.cs",
+              "RelativeDocumentMoniker": "MIMS Skill Competency\\Models\\EmployeeSkill.cs",
+              "ToolTip": "C:\\Users\\ayushk\\source\\repos\\MIMS Skill Competency\\MIMS Skill Competency\\Models\\EmployeeSkill.cs",
+              "RelativeToolTip": "MIMS Skill Competency\\Models\\EmployeeSkill.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T08:56:57.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ISkillRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ayushk\\source\\repos\\MIMS Skill Competency\\MIMS Skill Competency\\Interfaces\\ISkillRepository.cs",
+              "RelativeDocumentMoniker": "MIMS Skill Competency\\Interfaces\\ISkillRepository.cs",
+              "ToolTip": "C:\\Users\\ayushk\\source\\repos\\MIMS Skill Competency\\MIMS Skill Competency\\Interfaces\\ISkillRepository.cs",
+              "RelativeToolTip": "MIMS Skill Competency\\Interfaces\\ISkillRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T08:52:30.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ayushk\\source\\repos\\MIMS Skill Competency\\MIMS Skill Competency\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "MIMS Skill Competency\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\ayushk\\source\\repos\\MIMS Skill Competency\\MIMS Skill Competency\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "MIMS Skill Competency\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-06T08:43:38.94Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
