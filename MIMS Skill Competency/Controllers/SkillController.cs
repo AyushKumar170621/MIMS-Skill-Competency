@@ -63,7 +63,6 @@ namespace MIMS_Skill_Competency.Controllers
             return Ok(skillDomainTypes);
         }
 
-<<<<<<< HEAD
         [HttpGet("skillDomains/")]
         public ActionResult<IEnumerable<SkillDomain>> GetAllSkillDomain() { 
             var skillDom = _skillRepo.getSkillDomains();
@@ -74,7 +73,7 @@ namespace MIMS_Skill_Competency.Controllers
             return Ok(skillDom);
         }
 
-        [HttpPost("Skill/")]
+        [HttpPost("DomainSkill/")]
         public ActionResult<Skill> GetSkillByDomain([FromBody] List<SkillDomain> domain)
         {
             var skill = _skillRepo.getSkillBySkillDomain(domain);
@@ -84,7 +83,6 @@ namespace MIMS_Skill_Competency.Controllers
             }
             return Ok(skill);
         }
-=======
         [HttpGet("skillLevel/")]
         public ActionResult<IEnumerable<string>> GetSkillLevel()
         {
@@ -97,6 +95,5 @@ namespace MIMS_Skill_Competency.Controllers
             return Ok(skillLevel);
         }
 
->>>>>>> ff7a7fc87cc3646556f4413418ca13ca62cfd1fb
     }
 }
