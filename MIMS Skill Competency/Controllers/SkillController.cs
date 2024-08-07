@@ -46,10 +46,10 @@ namespace MIMS_Skill_Competency.Controllers
             return Ok(obj);
         }
 
-        [HttpGet("skillDomainType/{employeeId}")]
-        public ActionResult<IEnumerable<string>> GetDistinctSkillDomainTypes(int employeeId)
+        [HttpGet("skillDomainType/")]
+        public ActionResult<IEnumerable<string>> GetSkillDomainType()
         {
-            var skillDomainTypes = _skillRepo.GetDistinctSkillDomainType(employeeId);
+            var skillDomainTypes = _skillRepo.GetSkillDomainType();
             if (skillDomainTypes == null || !skillDomainTypes.Any())
             {
                 return NotFound();
@@ -58,6 +58,17 @@ namespace MIMS_Skill_Competency.Controllers
             return Ok(skillDomainTypes);
         }
 
-        [HttpGet]
+        [HttpGet("skillLevel/")]
+        public ActionResult<IEnumerable<string>> GetSkillLevel()
+        {
+            var skillLevel = _skillRepo.GetSkillLevel();
+            if (skillLevel == null || !skillLevel.Any())
+            {
+                return NotFound();
+            }
+
+            return Ok(skillLevel);
+        }
+
     }
 }

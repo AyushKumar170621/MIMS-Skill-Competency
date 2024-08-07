@@ -14,12 +14,23 @@ namespace MIMS_Skill_Competency.Repository
             _dbcontext = dbContext;
         }
 
-        public IEnumerable<string> GetDistinctSkillDomainType(int employeeId)
+        public IEnumerable<string> GetSkillDomainType()
         {
             using (IDbConnection dbConnection = _dbcontext.CreateConnection())
             {
-                string query = "SELECT distinct(skill_domain_type) FROM skillemployee WHERE emp_id = @empId";
-                return dbConnection.Query<string>(query, new { empId = employeeId }).ToList();
+                List<string> skillDomainType = new List<string>{ "Core", "Secondary"};
+
+                return skillDomainType;
+            }
+        }
+
+        public IEnumerable<string> GetSkillLevel() 
+        {
+            using (IDbConnection dbConnection = _dbcontext.CreateConnection())
+            {
+                List<string> skillLevel = new List<string> { "Beginner", "Intermediate", "Proficient", "Advanced", "Expert" };
+
+                return skillLevel;
             }
         }
         public ICollection<EmployeeSkill> getEmployeeSkills(SearchEmpSkill skl)
