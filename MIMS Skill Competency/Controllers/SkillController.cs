@@ -20,7 +20,12 @@ namespace MIMS_Skill_Competency.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Employee>> GetAllEmployee()
         {
-            return Ok(_employeeRepo.GetAllEmployee());
+            var obj = _employeeRepo.GetAllEmployee();
+            if (obj == null)
+            {
+                return NotFound();
+            }
+            return Ok(obj);
         }
 
 
