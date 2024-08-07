@@ -6,6 +6,8 @@ namespace MIMS_Skill_Competency.Interfaces
     {
         //ICollection<Employee> getMangersEmployee(int managerId);
         IEnumerable<string> GetDistinctSkillDomainType(int employeeId);
-        ICollection<EmployeeSkill> getEmployeeSkills(SearchEmpSkill skl);
+        public ICollection<SkillDomain> getSkillDomains();
+
+        public ICollection<Skill> getSkillBySkillDomain(List<SkillDomain> skillDomains);    
     }
 }

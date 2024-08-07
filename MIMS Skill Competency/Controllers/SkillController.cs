@@ -58,6 +58,25 @@ namespace MIMS_Skill_Competency.Controllers
             return Ok(skillDomainTypes);
         }
 
-        [HttpGet]
+        [HttpGet("skillDomains/")]
+        public ActionResult<IEnumerable<SkillDomain>> GetAllSkillDomain() { 
+            var skillDom = _skillRepo.getSkillDomains();
+            if(skillDom == null || !skillDom.Any())
+            {
+                return NotFound();
+            }
+            return Ok(skillDom);
+        }
+
+        [HttpPost("Skill/")]
+        public ActionResult<Skill> GetSkillByDomain([FromBody] List<SkillDomain> domain)
+        {
+            var skill = _skillRepo.getSkillBySkillDomain(domain);
+            if(skill == null || !skill.Any())
+            {
+                return NotFound();
+            }
+            return Ok(skill);
+        }
     }
 }

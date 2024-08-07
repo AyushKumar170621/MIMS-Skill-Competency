@@ -1,4 +1,5 @@
 ﻿using Dapper;
+using Microsoft.AspNetCore.Mvc;
 using MIMS_Skill_Competency.Data;
 using MIMS_Skill_Competency.Interfaces;
 using MIMS_Skill_Competency.Models;
@@ -22,9 +23,29 @@ namespace MIMS_Skill_Competency.Repository
                 return dbConnection.Query<string>(query, new { empId = employeeId }).ToList();
             }
         }
-        public ICollection<EmployeeSkill> getEmployeeSkills(SearchEmpSkill skl)
+
+        public ICollection<Skill> getSkillBySkillDomain(List<SkillDomain> skillDomains)
         {
-            throw new NotImplementedException();
+            var skill = new List<Skill>();
+            using (IDbConnection dbConnection = _dbcontext.CreateConnection())
+            {
+                foreach (var skillDomain in skillDomains)
+                {
+                    string query = "SELECT SkillId,SkillName FROM skill where DomainId = "+skillDomain.DomainId;
+                    var res = dbConnection.Query<Skill>(query).ToList();
+                    skill.AddRange(res);
+                }
+            }
+            return skill;
+        }
+
+        public ICollection<SkillDomain> getSkillDomains()
+        {
+            using (IDbConnection dbConnection = _dbcontext.CreateConnection())
+            {
+                string query = "SELECT DomainId,DomainName FROM skillDomain";
+                return dbConnection.Query<SkillDomain>(query).ToList();
+            }
         }
 
         //public ICollection<Employee> getMangersEmployee(int managerId)
