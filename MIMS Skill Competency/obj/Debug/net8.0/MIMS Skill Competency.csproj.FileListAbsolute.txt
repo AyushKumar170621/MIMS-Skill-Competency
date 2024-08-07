@@ -38,3 +38,43 @@ C:\Users\ayushk\source\repos\MIMS Skill Competency\MIMS Skill Competency\obj\Deb
 C:\Users\ayushk\source\repos\MIMS Skill Competency\MIMS Skill Competency\obj\Debug\net8.0\MIMS Skill Competency.pdb
 C:\Users\ayushk\source\repos\MIMS Skill Competency\MIMS Skill Competency\obj\Debug\net8.0\MIMS Skill Competency.genruntimeconfig.cache
 C:\Users\ayushk\source\repos\MIMS Skill Competency\MIMS Skill Competency\obj\Debug\net8.0\ref\MIMS Skill Competency.dll
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\bin\Debug\net8.0\appsettings.Development.json
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\bin\Debug\net8.0\appsettings.json
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\bin\Debug\net8.0\MIMS Skill Competency.exe
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\bin\Debug\net8.0\MIMS Skill Competency.deps.json
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\bin\Debug\net8.0\MIMS Skill Competency.runtimeconfig.json
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\bin\Debug\net8.0\MIMS Skill Competency.dll
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\bin\Debug\net8.0\MIMS Skill Competency.pdb
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\bin\Debug\net8.0\Dapper.dll
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\obj\Debug\net8.0\MIMS Skill Competency.csproj.AssemblyReference.cache
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\obj\Debug\net8.0\MIMS Skill Competency.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\obj\Debug\net8.0\MIMS Skill Competency.AssemblyInfoInputs.cache
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\obj\Debug\net8.0\MIMS Skill Competency.AssemblyInfo.cs
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\obj\Debug\net8.0\MIMS Skill Competency.csproj.CoreCompileInputs.cache
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\obj\Debug\net8.0\MIMS Skill Competency.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\obj\Debug\net8.0\MIMS Skill Competency.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\obj\Debug\net8.0\MIMS Skill Competency.sourcelink.json
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\obj\Debug\net8.0\staticwebassets.build.json
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\obj\Debug\net8.0\staticwebassets.development.json
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\obj\Debug\net8.0\staticwebassets\msbuild.MIMS Skill Competency.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\obj\Debug\net8.0\staticwebassets\msbuild.build.MIMS Skill Competency.props
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.MIMS Skill Competency.props
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.MIMS Skill Competency.props
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\obj\Debug\net8.0\staticwebassets.pack.json
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\obj\Debug\net8.0\scopedcss\bundle\MIMS Skill Competency.styles.css
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\obj\Debug\net8.0\MIMS Ski.135624FA.Up2Date
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\obj\Debug\net8.0\MIMS Skill Competency.dll
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\obj\Debug\net8.0\refint\MIMS Skill Competency.dll
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\obj\Debug\net8.0\MIMS Skill Competency.pdb
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\obj\Debug\net8.0\MIMS Skill Competency.genruntimeconfig.cache
+C:\Users\anjalim\OneDrive - Contata Solutions Pvt Ltd\Documents\SkillTab\MIMS-Skill-Competency\MIMS Skill Competency\obj\Debug\net8.0\ref\MIMS Skill Competency.dll
