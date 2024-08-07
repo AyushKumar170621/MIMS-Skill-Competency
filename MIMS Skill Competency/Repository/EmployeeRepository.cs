@@ -27,7 +27,7 @@ namespace MIMS_Skill_Competency.Repository
         {
             using (IDbConnection dbConnection = _dbcontext.CreateConnection())
             {
-                string query = "SELECT * FROM Employee WHERE emp_id = @EmpId";
+                string query = "SELECT * FROM Employee WHERE employeeid = @EmpId";
                 return dbConnection.Query<Employee>(query, new { EmpId = id }).ToList();
             }
         }
@@ -36,7 +36,7 @@ namespace MIMS_Skill_Competency.Repository
         {
             using (IDbConnection dbConnection = _dbcontext.CreateConnection())
             {
-                string query = "SELECT * FROM Employee WHERE manager_id = @ManagerId";
+                string query = "SELECT * FROM Employee WHERE managerid = @ManagerId";
                 return dbConnection.Query<Employee>(query, new { ManagerId = managerId }).ToList();
             }
         }

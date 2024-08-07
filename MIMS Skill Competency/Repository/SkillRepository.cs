@@ -19,9 +19,8 @@ namespace MIMS_Skill_Competency.Repository
         {
             using (IDbConnection dbConnection = _dbcontext.CreateConnection())
             {
-                List<string> skillDomainType = new List<string>{ "Core", "Secondary"};
-
-                return skillDomainType;
+                string query = "SELECT DomainType FROM SkillDomainType";
+                return dbConnection.Query<string>(query).ToList();
             }
         }
 
@@ -29,9 +28,8 @@ namespace MIMS_Skill_Competency.Repository
         {
             using (IDbConnection dbConnection = _dbcontext.CreateConnection())
             {
-                List<string> skillLevel = new List<string> { "Beginner", "Intermediate", "Proficient", "Advanced", "Expert" };
-
-                return skillLevel;
+                string query = "SELECT LevelName FROM SkillLevel";
+                return dbConnection.Query<string>(query).ToList();
             }
         }
 
