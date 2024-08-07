@@ -19,6 +19,7 @@ namespace MIMS_Skill_Competency
             builder.Services.AddSwaggerGen();
             builder.Services.AddSingleton<ApplicationDbContext>();
             builder.Services.AddScoped<ISkillRepository,SkillRepository>();
+            builder.Services.AddScoped<IEmployeeRepository, EmployeeRepository>();
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.

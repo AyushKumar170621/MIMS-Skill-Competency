@@ -2,9 +2,9 @@
 {
     public class Employee
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string email { get; set; }
-        public int managerId { get; set; }
+        public int emp_id { get; set; }
+        public string emp_name { get; set; }
+        public string emp_email { get; set; }
+        public int manager_id { get; set; }
     }
 }
