@@ -62,8 +62,7 @@
               "RelativeToolTip": "MIMS Skill Competency\\Controllers\\SkillController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T09:43:06.94Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-06T09:43:06.94Z"
             },
             {
               "$type": "Document",
@@ -75,8 +74,7 @@
               "RelativeToolTip": "MIMS Skill Competency\\appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-06T09:21:00.297Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-06T09:21:00.297Z"
             },
             {
               "$type": "Document",
@@ -88,8 +86,7 @@
               "RelativeToolTip": "MIMS Skill Competency\\Program.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAMwA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T09:19:26.553Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-06T09:19:26.553Z"
             },
             {
               "$type": "Document",
@@ -101,8 +98,7 @@
               "RelativeToolTip": "MIMS Skill Competency\\Repository\\SkillRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T09:16:55.774Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-06T09:16:55.774Z"
             },
             {
               "$type": "Document",
@@ -127,8 +123,7 @@
               "RelativeToolTip": "MIMS Skill Competency\\Models\\Employee.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T09:01:44.138Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-06T09:01:44.138Z"
             },
             {
               "$type": "Document",
@@ -140,8 +135,7 @@
               "RelativeToolTip": "MIMS Skill Competency\\Models\\EmployeeSkill.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T08:56:57.156Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-06T08:56:57.156Z"
             },
             {
               "$type": "Document",
@@ -153,8 +147,7 @@
               "RelativeToolTip": "MIMS Skill Competency\\Interfaces\\ISkillRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T08:52:30.093Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-06T08:52:30.093Z"
             },
             {
               "$type": "Document",
@@ -166,8 +159,7 @@
               "RelativeToolTip": "MIMS Skill Competency\\Data\\ApplicationDbContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T08:43:38.94Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-06T08:43:38.94Z"
             }
           ]
         }
