@@ -20,7 +20,12 @@ namespace MIMS_Skill_Competency.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Employee>> GetAllEmployee()
         {
-            return Ok(_employeeRepo.GetAllEmployee());
+            var obj = _employeeRepo.GetAllEmployee();
+            if (obj == null)
+            {
+                return NotFound();
+            }
+            return Ok(obj);
         }
 
 
@@ -46,10 +51,10 @@ namespace MIMS_Skill_Competency.Controllers
             return Ok(obj);
         }
 
-        [HttpGet("skillDomainType/{employeeId}")]
-        public ActionResult<IEnumerable<string>> GetDistinctSkillDomainTypes(int employeeId)
+        [HttpGet("skillDomainType/")]
+        public ActionResult<IEnumerable<string>> GetSkillDomainType()
         {
-            var skillDomainTypes = _skillRepo.GetDistinctSkillDomainType(employeeId);
+            var skillDomainTypes = _skillRepo.GetSkillDomainType();
             if (skillDomainTypes == null || !skillDomainTypes.Any())
             {
                 return NotFound();
@@ -58,6 +63,7 @@ namespace MIMS_Skill_Competency.Controllers
             return Ok(skillDomainTypes);
         }
 
+<<<<<<< HEAD
         [HttpGet("skillDomains/")]
         public ActionResult<IEnumerable<SkillDomain>> GetAllSkillDomain() { 
             var skillDom = _skillRepo.getSkillDomains();
@@ -78,5 +84,19 @@ namespace MIMS_Skill_Competency.Controllers
             }
             return Ok(skill);
         }
+=======
+        [HttpGet("skillLevel/")]
+        public ActionResult<IEnumerable<string>> GetSkillLevel()
+        {
+            var skillLevel = _skillRepo.GetSkillLevel();
+            if (skillLevel == null || !skillLevel.Any())
+            {
+                return NotFound();
+            }
+
+            return Ok(skillLevel);
+        }
+
+>>>>>>> ff7a7fc87cc3646556f4413418ca13ca62cfd1fb
     }
 }
