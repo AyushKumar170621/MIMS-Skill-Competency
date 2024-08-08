@@ -6,18 +6,18 @@ namespace MIMS_Skill_Competency.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class SkillController : Controller
+    public class SkillEmployeeController : Controller
     {
         private readonly ISkillRepository _skillRepo;
         private readonly IEmployeeRepository _employeeRepo;
 
-        public SkillController(ISkillRepository skillRepo, IEmployeeRepository employeeRepo)
+        public SkillEmployeeController(ISkillRepository skillRepo, IEmployeeRepository employeeRepo)
         {
             _skillRepo = skillRepo;
             _employeeRepo = employeeRepo;
         }
 
-        [HttpGet]
+        [HttpGet("employees")]
         public ActionResult<IEnumerable<Employee>> GetAllEmployee()
         {
             var obj = _employeeRepo.GetAllEmployee();
@@ -29,7 +29,7 @@ namespace MIMS_Skill_Competency.Controllers
         }
 
 
-        [HttpGet("{id}")]
+        [HttpGet("employee/{id}")]
         public ActionResult<Employee> GetEmployeeById(int id)
         {
             var obj = _employeeRepo.GetEmployeeById(id);
@@ -40,7 +40,7 @@ namespace MIMS_Skill_Competency.Controllers
             return Ok(obj);
         }
 
-        [HttpGet("manager/{managerId}")]
+        [HttpGet("manager/employee/{managerId}")]
         public ActionResult<IEnumerable<Employee>> getMangersEmployee(int managerId)
         {
             var obj = _employeeRepo.getMangersEmployee(managerId);
@@ -93,6 +93,30 @@ namespace MIMS_Skill_Competency.Controllers
             }
 
             return Ok(skillLevel);
+        }
+
+        [HttpGet("search")]
+        public ActionResult<ICollection<SearchEmpSkill>> SearchEmployees(
+       
+       [FromQuery] List<string> employeeName = null,
+       [FromQuery] List<string> skillDomainType = null,
+       [FromQuery] List<string> skillDomain = null,
+       [FromQuery] List<string> skill = null,
+       [FromQuery] List<string> skillLevel = null,
+       [FromQuery] string experienceYear = null,
+       [FromQuery] string experienceMonth = null)
+        {
+            var employees = _skillRepo.SearchEmployees(
+                
+                employeeName,
+                skillDomainType,
+                skillDomain,
+                skill,
+                skillLevel,
+                experienceYear,
+                experienceMonth);
+
+            return Ok(employees);
         }
 
     }
