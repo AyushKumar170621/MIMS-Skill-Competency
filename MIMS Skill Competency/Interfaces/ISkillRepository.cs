@@ -7,8 +7,8 @@ namespace MIMS_Skill_Competency.Interfaces
         public ICollection<SkillDomain> getSkillDomains();
 
         public ICollection<Skill> getSkillBySkillDomain(List<SkillDomain> skillDomains);    
-        IEnumerable<string> GetSkillDomainType();
-        IEnumerable<string> GetSkillLevel();
+        IEnumerable<SkillDomainType> GetSkillDomainType();
+        IEnumerable<SkillLevel> GetSkillLevel();
 
 
         ICollection<SearchEmpSkill> SearchEmployees(

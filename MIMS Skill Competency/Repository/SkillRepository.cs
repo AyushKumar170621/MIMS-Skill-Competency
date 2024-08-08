@@ -15,21 +15,21 @@ namespace MIMS_Skill_Competency.Repository
             _dbcontext = dbContext;
         }
 
-        public IEnumerable<string> GetSkillDomainType()
+        public IEnumerable<SkillDomainType> GetSkillDomainType()
         {
             using (IDbConnection dbConnection = _dbcontext.CreateConnection())
             {
-                string query = "SELECT DomainType FROM SkillDomainType";
-                return dbConnection.Query<string>(query).ToList();
+                string query = "GetAllDomainTypes";
+                return dbConnection.Query<SkillDomainType>(query, commandType: CommandType.StoredProcedure).ToList();
             }
         }
 
-        public IEnumerable<string> GetSkillLevel() 
+        public IEnumerable<SkillLevel> GetSkillLevel() 
         {
             using (IDbConnection dbConnection = _dbcontext.CreateConnection())
             {
-                string query = "SELECT LevelName FROM SkillLevel";
-                return dbConnection.Query<string>(query).ToList();
+                string query = "GetSkillLevelDetails";
+                return dbConnection.Query<SkillLevel>(query,commandType:CommandType.StoredProcedure).ToList();
             }
         }
 
@@ -52,8 +52,8 @@ namespace MIMS_Skill_Competency.Repository
         {
             using (IDbConnection dbConnection = _dbcontext.CreateConnection())
             {
-                string query = "SELECT DomainId,DomainName FROM skillDomain";
-                return dbConnection.Query<SkillDomain>(query).ToList();
+                string query = "GetAllSkillDomainDetails";
+                return dbConnection.Query<SkillDomain>(query,commandType:CommandType.StoredProcedure).ToList();
             }
         }
 
@@ -187,5 +187,7 @@ namespace MIMS_Skill_Competency.Repository
 
             return sampleData;
         }
+
+       
     }
 }

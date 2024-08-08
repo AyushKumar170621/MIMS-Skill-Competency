@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Dapper;
+using Microsoft.AspNetCore.Mvc;
 using MIMS_Skill_Competency.Interfaces;
 using MIMS_Skill_Competency.Models;
 
@@ -44,6 +45,7 @@ namespace MIMS_Skill_Competency.Controllers
         public ActionResult<IEnumerable<Employee>> getMangersEmployee(int managerId)
         {
             var obj = _employeeRepo.getMangersEmployee(managerId);
+            
             if (obj == null)
             {
                 return NotFound();

@@ -36,8 +36,10 @@ namespace MIMS_Skill_Competency.Repository
         {
             using (IDbConnection dbConnection = _dbcontext.CreateConnection())
             {
-                string query = "SELECT * FROM Employee WHERE managerid = @ManagerId";
-                return dbConnection.Query<Employee>(query, new { ManagerId = managerId }).ToList();
+                var parameter = new DynamicParameters();
+                parameter.Add("ManagerId", managerId, DbType.Int32);
+                //string query = "SELECT * FROM Employee WHERE managerid = @ManagerId";
+                return dbConnection.Query<Employee>("GetEmployeesUnderManager", parameter,commandType: CommandType.StoredProcedure).ToList();
             }
         }
     }
