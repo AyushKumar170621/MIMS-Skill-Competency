@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ayushk\\source\\repos\\MIMS-Skill-Competency\\MIMS Skill Competency\\MIMS Skill Competency.csproj": {}
+    "C:\\Users\\hrishabhy\\OneDrive - Contata Solutions Pvt Ltd\\Desktop\\Demo\\demo3\\MIMS-Skill-Competency\\MIMS Skill Competency\\MIMS Skill Competency.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ayushk\\source\\repos\\MIMS-Skill-Competency\\MIMS Skill Competency\\MIMS Skill Competency.csproj": {
+    "C:\\Users\\hrishabhy\\OneDrive - Contata Solutions Pvt Ltd\\Desktop\\Demo\\demo3\\MIMS-Skill-Competency\\MIMS Skill Competency\\MIMS Skill Competency.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ayushk\\source\\repos\\MIMS-Skill-Competency\\MIMS Skill Competency\\MIMS Skill Competency.csproj",
+        "projectUniqueName": "C:\\Users\\hrishabhy\\OneDrive - Contata Solutions Pvt Ltd\\Desktop\\Demo\\demo3\\MIMS-Skill-Competency\\MIMS Skill Competency\\MIMS Skill Competency.csproj",
         "projectName": "MIMS Skill Competency",
-        "projectPath": "C:\\Users\\ayushk\\source\\repos\\MIMS-Skill-Competency\\MIMS Skill Competency\\MIMS Skill Competency.csproj",
-        "packagesPath": "C:\\Users\\ayushk\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ayushk\\source\\repos\\MIMS-Skill-Competency\\MIMS Skill Competency\\obj\\",
+        "projectPath": "C:\\Users\\hrishabhy\\OneDrive - Contata Solutions Pvt Ltd\\Desktop\\Demo\\demo3\\MIMS-Skill-Competency\\MIMS Skill Competency\\MIMS Skill Competency.csproj",
+        "packagesPath": "C:\\Users\\hrishabhy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hrishabhy\\OneDrive - Contata Solutions Pvt Ltd\\Desktop\\Demo\\demo3\\MIMS-Skill-Competency\\MIMS Skill Competency\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\ayushk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\hrishabhy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

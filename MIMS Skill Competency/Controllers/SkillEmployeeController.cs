@@ -98,7 +98,7 @@ namespace MIMS_Skill_Competency.Controllers
         }
 
         [HttpGet("search")]
-        public ActionResult<ICollection<SearchEmpSkill>> SearchEmployees(
+        public ActionResult<ICollection<EmployeeSkill>> SearchEmployees(
        
        [FromQuery] List<string> employeeName = null,
        [FromQuery] List<string> skillDomainType = null,

@@ -1,15 +1,22 @@
-﻿namespace MIMS_Skill_Competency.Models
+﻿
+namespace MIMS_Skill_Competency.Models
 {
     public class EmployeeSkill
     {
-        public int skill_id { get; set; }
-        public string skill_domain_type { get; set; }
-        public string skill_domain { get; set; }
-        public string skill { get; set; }
-        public string skill_level { get; set; }        
-        public int experience_month { get; set; }
-        public int experience_year { get; set; }
-        public string comment { get; set; }
-        public int emp_id { get; set; }
+        public int SkillEmployeeId { get; set; }
+        public int EmployeeId { get; set; }
+        public int LevelId {  get; set; }
+        public string LevelName { get; set; }
+        public int SkillDomainTypeId { get; set; }
+        public int SkillId { get; set; }
+        public string SkillName { get; set; }
+        public int ExpMonth { get; set; }
+        public int ExpYear { get; set; }
+        public int DomainId { get; set; }
+        public string DomainName { get; set; }
+       
+        public string Comments { get; set; }
+        // Navigation property for related comments
+       // public ICollection<Comment> Comments { get; set; }
     }
 }

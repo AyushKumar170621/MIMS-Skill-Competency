@@ -11,7 +11,7 @@ namespace MIMS_Skill_Competency.Interfaces
         IEnumerable<SkillLevel> GetSkillLevel();
 
 
-        ICollection<SearchEmpSkill> SearchEmployees(
+        ICollection<EmployeeSkill> SearchEmployees(
          //int managerId,
             List<string> employeeNames = null,
             List<string> skillDomainTypes = null,
