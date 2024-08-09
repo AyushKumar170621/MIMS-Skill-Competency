@@ -18,8 +18,9 @@ namespace MIMS_Skill_Competency.Repository
             using (IDbConnection dbConnection = _dbcontext.CreateConnection())
             {
 
-                string query = "SELECT * FROM Employee";
-                return dbConnection.Query<Employee>(query).ToList();
+                string query = "GetAllEmployees";
+                var res = dbConnection.Query<Employee>(query,commandType:CommandType.StoredProcedure).ToList();
+                return res;
             }
         }
 

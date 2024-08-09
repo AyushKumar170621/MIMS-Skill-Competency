@@ -35,17 +35,20 @@ namespace MIMS_Skill_Competency.Repository
 
         public ICollection<Skill> getSkillBySkillDomain(List<SkillDomain> skillDomains)
         {
-            var skill = new List<Skill>();
             using (IDbConnection dbConnection = _dbcontext.CreateConnection())
             {
-                foreach (var skillDomain in skillDomains)
+                var table = new DataTable();
+                table.Columns.Add("Item", typeof(int));
+                foreach(var sd in skillDomains)
                 {
-                    string query = "SELECT SkillId,SkillName FROM skill where DomainId = "+skillDomain.DomainId;
-                    var res = dbConnection.Query<Skill>(query).ToList();
-                    skill.AddRange(res);
+                    table.Rows.Add(sd.DomainId);
                 }
+                var parameters = new DynamicParameters();
+                parameters.Add("@DomainIds", table.AsTableValuedParameter("dbo.IntListType"));
+                string query = "GetSkillsByDomainIds";
+                var res = dbConnection.Query<Skill>(query,parameters,commandType:CommandType.StoredProcedure).ToList();
+                return res;
             }
-            return skill;
         }
 
         public ICollection<SkillDomain> getSkillDomains()
