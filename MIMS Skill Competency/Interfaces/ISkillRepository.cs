@@ -12,13 +12,12 @@ namespace MIMS_Skill_Competency.Interfaces
 
 
         ICollection<EmployeeSkill> SearchEmployees(
-         //int managerId,
-            List<string> employeeNames = null,
-            List<string> skillDomainTypes = null,
-            List<string> skillDomains = null,
-            List<string> skills = null,
-            List<string> skillLevels = null,
-            string experienceYears = null,
-            string experienceMonth = null);
+        List<int> employeeIds ,
+        List<int> skillDomainTypes,
+        List<int> skillDomains ,
+        List<int> skills,
+        List<int> skillLevels,
+        int? experienceYears = null, // Nullable int
+        int? experienceMonth = null); // Nullable int
     }
 }

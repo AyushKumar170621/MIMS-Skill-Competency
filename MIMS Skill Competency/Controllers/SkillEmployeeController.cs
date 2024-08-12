@@ -99,27 +99,36 @@ namespace MIMS_Skill_Competency.Controllers
 
         [HttpGet("search")]
         public ActionResult<ICollection<EmployeeSkill>> SearchEmployees(
-       
-       [FromQuery] List<string> employeeName = null,
-       [FromQuery] List<string> skillDomainType = null,
-       [FromQuery] List<string> skillDomain = null,
-       [FromQuery] List<string> skill = null,
-       [FromQuery] List<string> skillLevel = null,
-       [FromQuery] string experienceYear = null,
-       [FromQuery] string experienceMonth = null)
+     [FromQuery] List<int> employeeIds = null,
+     [FromQuery] List<int> skillDomainTypes = null,
+     [FromQuery] List<int> skillDomains = null,
+     [FromQuery] List<int> skills = null,
+     [FromQuery] List<int> skillLevels = null,
+     [FromQuery] int? experienceYears = null, // Nullable int
+     [FromQuery] int? experienceMonth = null) // Nullable int
         {
+            // Initialize lists if they are null
+            employeeIds = employeeIds ?? new List<int>();
+            skillDomainTypes = skillDomainTypes ?? new List<int>();
+            skillDomains = skillDomains ?? new List<int>();
+            skills = skills ?? new List<int>();
+            skillLevels = skillLevels ?? new List<int>();
+
+            // Call the repository method with the parameters
             var employees = _skillRepo.SearchEmployees(
-                
-                employeeName,
-                skillDomainType,
-                skillDomain,
-                skill,
-                skillLevel,
-                experienceYear,
+                employeeIds,
+                skillDomainTypes,
+                skillDomains,
+                skills,
+                skillLevels,
+                experienceYears,
                 experienceMonth);
 
             return Ok(employees);
         }
+
+
+
 
     }
 }

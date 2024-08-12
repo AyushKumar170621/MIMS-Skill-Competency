@@ -3,20 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\hrishabhy\\OneDrive - Contata Solutions Pvt Ltd\\Desktop\\Demo\\demo3\\MIMS-Skill-Competency\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FAC029DE-317B-492B-AB2D-F48674D5174C}|MIMS Skill Competency\\MIMS Skill Competency.csproj|c:\\users\\hrishabhy\\onedrive - contata solutions pvt ltd\\desktop\\demo\\demo3\\mims-skill-competency\\mims skill competency\\models\\employeeskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAC029DE-317B-492B-AB2D-F48674D5174C}|MIMS Skill Competency\\MIMS Skill Competency.csproj|solutionrelative:mims skill competency\\models\\employeeskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FAC029DE-317B-492B-AB2D-F48674D5174C}|MIMS Skill Competency\\MIMS Skill Competency.csproj|c:\\users\\hrishabhy\\onedrive - contata solutions pvt ltd\\desktop\\demo\\demo3\\mims-skill-competency\\mims skill competency\\controllers\\skillemployeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAC029DE-317B-492B-AB2D-F48674D5174C}|MIMS Skill Competency\\MIMS Skill Competency.csproj|solutionrelative:mims skill competency\\controllers\\skillemployeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FAC029DE-317B-492B-AB2D-F48674D5174C}|MIMS Skill Competency\\MIMS Skill Competency.csproj|c:\\users\\hrishabhy\\onedrive - contata solutions pvt ltd\\desktop\\demo\\demo3\\mims-skill-competency\\mims skill competency\\repository\\skillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FAC029DE-317B-492B-AB2D-F48674D5174C}|MIMS Skill Competency\\MIMS Skill Competency.csproj|solutionrelative:mims skill competency\\repository\\skillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{FAC029DE-317B-492B-AB2D-F48674D5174C}|MIMS Skill Competency\\MIMS Skill Competency.csproj|c:\\users\\hrishabhy\\onedrive - contata solutions pvt ltd\\desktop\\demo\\demo3\\mims-skill-competency\\mims skill competency\\interfaces\\iskillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAC029DE-317B-492B-AB2D-F48674D5174C}|MIMS Skill Competency\\MIMS Skill Competency.csproj|solutionrelative:mims skill competency\\interfaces\\iskillrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{FAC029DE-317B-492B-AB2D-F48674D5174C}|MIMS Skill Competency\\MIMS Skill Competency.csproj|c:\\users\\hrishabhy\\onedrive - contata solutions pvt ltd\\desktop\\demo\\demo3\\mims-skill-competency\\mims skill competency\\models\\searchempskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FAC029DE-317B-492B-AB2D-F48674D5174C}|MIMS Skill Competency\\MIMS Skill Competency.csproj|solutionrelative:mims skill competency\\models\\searchempskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FAC029DE-317B-492B-AB2D-F48674D5174C}|MIMS Skill Competency\\MIMS Skill Competency.csproj|c:\\users\\hrishabhy\\onedrive - contata solutions pvt ltd\\desktop\\demo\\demo3\\mims-skill-competency\\mims skill competency\\controllers\\skillemployeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FAC029DE-317B-492B-AB2D-F48674D5174C}|MIMS Skill Competency\\MIMS Skill Competency.csproj|solutionrelative:mims skill competency\\controllers\\skillemployeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FAC029DE-317B-492B-AB2D-F48674D5174C}|MIMS Skill Competency\\MIMS Skill Competency.csproj|c:\\users\\hrishabhy\\onedrive - contata solutions pvt ltd\\desktop\\demo\\demo3\\mims-skill-competency\\mims skill competency\\models\\employeeskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FAC029DE-317B-492B-AB2D-F48674D5174C}|MIMS Skill Competency\\MIMS Skill Competency.csproj|solutionrelative:mims skill competency\\models\\employeeskill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FAC029DE-317B-492B-AB2D-F48674D5174C}|MIMS Skill Competency\\MIMS Skill Competency.csproj|c:\\users\\hrishabhy\\onedrive - contata solutions pvt ltd\\desktop\\demo\\demo3\\mims-skill-competency\\mims skill competency\\repository\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,7 +67,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -87,7 +91,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": "ISkillRepository.cs",
+              "DocumentMoniker": "C:\\Users\\hrishabhy\\OneDrive - Contata Solutions Pvt Ltd\\Desktop\\Demo\\demo3\\MIMS-Skill-Competency\\MIMS Skill Competency\\Interfaces\\ISkillRepository.cs",
+              "RelativeDocumentMoniker": "MIMS Skill Competency\\Interfaces\\ISkillRepository.cs",
+              "ToolTip": "C:\\Users\\hrishabhy\\OneDrive - Contata Solutions Pvt Ltd\\Desktop\\Demo\\demo3\\MIMS-Skill-Competency\\MIMS Skill Competency\\Interfaces\\ISkillRepository.cs",
+              "RelativeToolTip": "MIMS Skill Competency\\Interfaces\\ISkillRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T06:51:00.317Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "SkillDomainType.cs",
               "DocumentMoniker": "C:\\Users\\hrishabhy\\OneDrive - Contata Solutions Pvt Ltd\\Desktop\\Demo\\demo3\\MIMS-Skill-Competency\\MIMS Skill Competency\\Models\\SkillDomainType.cs",
               "RelativeDocumentMoniker": "MIMS Skill Competency\\Models\\SkillDomainType.cs",
@@ -105,14 +122,14 @@
               "RelativeDocumentMoniker": "MIMS Skill Competency\\Repository\\SkillRepository.cs",
               "ToolTip": "C:\\Users\\hrishabhy\\OneDrive - Contata Solutions Pvt Ltd\\Desktop\\Demo\\demo3\\MIMS-Skill-Competency\\MIMS Skill Competency\\Repository\\SkillRepository.cs",
               "RelativeToolTip": "MIMS Skill Competency\\Repository\\SkillRepository.cs",
-              "ViewState": "AQIAAC8AAAAAAAAAAAAIwDIAAAANAAAA",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAcwHAAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-06T09:16:55.774Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "SearchEmpSkill.cs",
               "DocumentMoniker": "C:\\Users\\hrishabhy\\OneDrive - Contata Solutions Pvt Ltd\\Desktop\\Demo\\demo3\\MIMS-Skill-Competency\\MIMS Skill Competency\\Models\\SearchEmpSkill.cs",
               "RelativeDocumentMoniker": "MIMS Skill Competency\\Models\\SearchEmpSkill.cs",
@@ -120,25 +137,24 @@
               "RelativeToolTip": "MIMS Skill Competency\\Models\\SearchEmpSkill.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T09:12:51.967Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-06T09:12:51.967Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "SkillEmployeeController.cs",
               "DocumentMoniker": "C:\\Users\\hrishabhy\\OneDrive - Contata Solutions Pvt Ltd\\Desktop\\Demo\\demo3\\MIMS-Skill-Competency\\MIMS Skill Competency\\Controllers\\SkillEmployeeController.cs",
               "RelativeDocumentMoniker": "MIMS Skill Competency\\Controllers\\SkillEmployeeController.cs",
               "ToolTip": "C:\\Users\\hrishabhy\\OneDrive - Contata Solutions Pvt Ltd\\Desktop\\Demo\\demo3\\MIMS-Skill-Competency\\MIMS Skill Competency\\Controllers\\SkillEmployeeController.cs",
               "RelativeToolTip": "MIMS Skill Competency\\Controllers\\SkillEmployeeController.cs",
-              "ViewState": "AQIAAE4AAAAAAAAAAAA8wEMAAAAiAAAA",
+              "ViewState": "AQIAAFwAAAAAAAAAAAAcwHIAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-06T09:43:06.94Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "EmployeeRepository.cs",
               "DocumentMoniker": "C:\\Users\\hrishabhy\\OneDrive - Contata Solutions Pvt Ltd\\Desktop\\Demo\\demo3\\MIMS-Skill-Competency\\MIMS Skill Competency\\Repository\\EmployeeRepository.cs",
               "RelativeDocumentMoniker": "MIMS Skill Competency\\Repository\\EmployeeRepository.cs",
@@ -146,12 +162,11 @@
               "RelativeToolTip": "MIMS Skill Competency\\Repository\\EmployeeRepository.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T04:46:53.717Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-07T04:46:53.717Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "dbo.employee [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/172.16.1.58_1433/test/sa/SqlTable/dbo.employee.sql",
               "ToolTip": "dbo.employee [Data]",
@@ -160,7 +175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "dbo.Employees [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/172.16.1.58_1433/test/sa/SqlTable/dbo.Employees.sql",
               "ToolTip": "dbo.Employees [Data]",
@@ -169,7 +184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "dbo.skillemployee [Data]",
               "DocumentMoniker": "ViewDataWindow_MSSQL__/172.16.1.58_1433/test/sa/SqlTable/dbo.skillemployee.sql",
               "ToolTip": "dbo.skillemployee [Data]",
@@ -178,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "IEmployeeRepository.cs",
               "DocumentMoniker": "C:\\Users\\hrishabhy\\OneDrive - Contata Solutions Pvt Ltd\\Desktop\\Demo\\demo3\\MIMS-Skill-Competency\\MIMS Skill Competency\\Interfaces\\IEmployeeRepository.cs",
               "RelativeDocumentMoniker": "MIMS Skill Competency\\Interfaces\\IEmployeeRepository.cs",
@@ -190,20 +205,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "EmployeeSkill.cs",
               "DocumentMoniker": "C:\\Users\\hrishabhy\\OneDrive - Contata Solutions Pvt Ltd\\Desktop\\Demo\\demo3\\MIMS-Skill-Competency\\MIMS Skill Competency\\Models\\EmployeeSkill.cs",
               "RelativeDocumentMoniker": "MIMS Skill Competency\\Models\\EmployeeSkill.cs",
               "ToolTip": "C:\\Users\\hrishabhy\\OneDrive - Contata Solutions Pvt Ltd\\Desktop\\Demo\\demo3\\MIMS-Skill-Competency\\MIMS Skill Competency\\Models\\EmployeeSkill.cs",
               "RelativeToolTip": "MIMS Skill Competency\\Models\\EmployeeSkill.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T08:56:57.156Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-06T08:56:57.156Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "SkillLevel.cs",
               "DocumentMoniker": "C:\\Users\\hrishabhy\\OneDrive - Contata Solutions Pvt Ltd\\Desktop\\Demo\\demo3\\MIMS-Skill-Competency\\MIMS Skill Competency\\Models\\SkillLevel.cs",
               "RelativeDocumentMoniker": "MIMS Skill Competency\\Models\\SkillLevel.cs",
@@ -215,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\hrishabhy\\OneDrive - Contata Solutions Pvt Ltd\\Desktop\\Demo\\demo3\\MIMS-Skill-Competency\\MIMS Skill Competency\\appsettings.json",
               "RelativeDocumentMoniker": "MIMS Skill Competency\\appsettings.json",
@@ -227,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "SkillLevel.cs",
               "DocumentMoniker": "C:\\Users\\hrishabhy\\OneDrive - Contata Solutions Pvt Ltd\\Desktop\\Demo\\demo3\\MIMS-Skill-Competency\\MIMS Skill Competency\\Models\\SkillLevel.cs",
               "RelativeDocumentMoniker": "MIMS Skill Competency\\Models\\SkillLevel.cs",
@@ -239,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\hrishabhy\\OneDrive - Contata Solutions Pvt Ltd\\Desktop\\Demo\\demo3\\MIMS-Skill-Competency\\MIMS Skill Competency\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "MIMS Skill Competency\\Data\\ApplicationDbContext.cs",

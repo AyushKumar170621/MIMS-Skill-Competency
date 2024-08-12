@@ -65,25 +65,80 @@ namespace MIMS_Skill_Competency.Repository
         //    throw new NotImplementedException();
         //}
 
+        //public ICollection<EmployeeSkill> SearchEmployees(
+        // //int managerId,
+        // List<string> employeeNames = null,
+        // List<string> skillDomainTypes = null,
+        // List<string> skillDomains = null,
+        // List<string> skills = null,
+        // List<string> skillLevels = null,
+        // string experienceYears = null,
+        // string experienceMonth = null)
+        //{
+        //    using (IDbConnection dbConnection = _dbcontext.CreateConnection())
+        //    {
+
+        //        //var parameters = new DynamicParameters();
+        //        //parameters.Add("@DomainIds", table.AsTableValuedParameter("dbo.IntListType"));
+
+
+        //        string query = "GetSkillEmployeeDetails1";
+
+        //        return dbConnection.Query<EmployeeSkill>(query, commandType: CommandType.StoredProcedure).ToList();
+        //    }
+
+        //}
+
         public ICollection<EmployeeSkill> SearchEmployees(
-      //int managerId,
-         List<string> employeeNames = null,
-         List<string> skillDomainTypes = null,
-         List<string> skillDomains = null,
-         List<string> skills = null,
-         List<string> skillLevels = null,
-         string experienceYears = null,
-         string experienceMonth = null)
+    List<int> employeeIds ,
+    List<int> skillDomainTypes ,
+    List<int> skillDomains,
+    List<int> skills,
+    List<int> skillLevels,
+    int? experienceYears = null, // Nullable int
+    int? experienceMonth = null) // Nullable int
+
+           
         {
+            var a = employeeIds;
+            Console.WriteLine(a);
+
             using (IDbConnection dbConnection = _dbcontext.CreateConnection())
             {
-                string query = "TemporarySearch";
+                var parameters = new DynamicParameters();
 
-                return dbConnection.Query<EmployeeSkill>(query, commandType: CommandType.StoredProcedure).ToList();
+                // Function to convert List<int> to DataTable
+                DataTable ConvertToDataTable(List<int> list)
+                {
+                    var table = new DataTable();
+                    table.Columns.Add("Item", typeof(int));
+                    if (list != null)
+                    {
+                        foreach (var item in list)
+                        {
+                            table.Rows.Add(item);
+                        }
+                    }
+                    return table;
+                }
+
+                // Add table-valued parameters
+                //parameters.Add("@SEmployeeId", ConvertToDataTable(employeeIds).AsTableValuedParameter("dbo.IntListType"));
+                parameters.Add("@EmployeeId", ConvertToDataTable(employeeIds).AsTableValuedParameter("dbo.IntListType"));
+                parameters.Add("@DomainID", ConvertToDataTable(skillDomains).AsTableValuedParameter("dbo.IntListType"));
+                parameters.Add("@SkillId", ConvertToDataTable(skills).AsTableValuedParameter("dbo.IntListType"));
+                parameters.Add("@LevelId", ConvertToDataTable(skillLevels).AsTableValuedParameter("dbo.IntListType"));
+                parameters.Add("@DomainType", ConvertToDataTable(skillDomainTypes).AsTableValuedParameter("dbo.IntListType"));
+
+                // Add scalar parameters
+                parameters.Add("@ExpYear", experienceYears.HasValue ? (object)experienceYears.Value : 0, DbType.Int32);
+                parameters.Add("@ExpMonth", experienceMonth.HasValue ? (object)experienceMonth.Value : 0, DbType.Int32);
+
+                // Execute stored procedure
+                var query = "GetSkillEmployeeDetails1";
+                return dbConnection.Query<EmployeeSkill>(query, parameters, commandType: CommandType.StoredProcedure).ToList();
             }
-
         }
 
-       
     }
 }
