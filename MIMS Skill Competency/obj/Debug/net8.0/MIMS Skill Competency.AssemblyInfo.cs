@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MIMS Skill Competency")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ff07ea00abb23675ff54bb9c57dff295f270339d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b7cae4d41174250eb6dfca242e7ead33af3af9a5")]
 [assembly: System.Reflection.AssemblyProductAttribute("MIMS Skill Competency")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MIMS Skill Competency")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

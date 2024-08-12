@@ -15,12 +15,24 @@ namespace MIMS_Skill_Competency.Repository
         }
         public IEnumerable<Employee> GetAllEmployee()
         {
-            using (IDbConnection dbConnection = _dbcontext.CreateConnection())
+            try
             {
+                using (IDbConnection dbConnection = _dbcontext.CreateConnection())
+                {
+                    if (dbConnection == null)
+                    {
+                        throw new InvalidOperationException("Unable to create a database connection.");
+                    }
 
-                string query = "GetAllEmployees";
-                var res = dbConnection.Query<Employee>(query,commandType:CommandType.StoredProcedure).ToList();
-                return res;
+                    string query = "GetAllEmployees";
+                    var result = dbConnection.Query<Employee>(query, commandType: CommandType.StoredProcedure).ToList();
+
+                    return result ?? new List<Employee>(); // Ensure the result is never null
+                }
+            }
+            catch (Exception ex)
+            {
+                throw new ApplicationException("An error occurred while retrieving employees.", ex);
             }
         }
 
