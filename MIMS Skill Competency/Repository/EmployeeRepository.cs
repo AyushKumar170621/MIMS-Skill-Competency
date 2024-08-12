@@ -47,12 +47,42 @@ namespace MIMS_Skill_Competency.Repository
 
         public IEnumerable<Employee> getMangersEmployee(int managerId)
         {
-            using (IDbConnection dbConnection = _dbcontext.CreateConnection())
+            if (managerId <= 0)
             {
-                var parameter = new DynamicParameters();
-                parameter.Add("ManagerId", managerId, DbType.Int32);
-                //string query = "SELECT * FROM Employee WHERE managerid = @ManagerId";
-                return dbConnection.Query<Employee>("GetEmployeesUnderManager", parameter,commandType: CommandType.StoredProcedure).ToList();
+                throw new ArgumentException("Invalid Manager ID. It must be a positive integer.", nameof(managerId));
+            }
+
+            try
+            {
+                using (IDbConnection dbConnection = _dbcontext.CreateConnection())
+                {
+                    if (dbConnection == null)
+                    {
+                        throw new InvalidOperationException("Unable to create a database connection.");
+                    }
+
+                    var parameters = new DynamicParameters();
+                    parameters.Add("ManagerId", managerId, DbType.Int32);
+
+                    var employees = dbConnection.Query<Employee>("GetEmployeesUnderManager", parameters, commandType: CommandType.StoredProcedure).ToList();
+
+                    if (employees == null || !employees.Any())
+                    {
+                        // Depending on the calling code, you might want to return an empty list or handle this differently.
+                        return new List<Employee>(); // Return an empty list if no employees are found.
+                    }
+
+                    return employees;
+                }
+            }
+            catch (Exception ex)
+            {
+                // Log the exception (replace with your logging mechanism)
+                // LogError(ex);
+
+                // Optionally, handle the exception or rethrow it based on your needs.
+                // For example, you might rethrow or wrap it in a custom exception:
+                throw new ApplicationException("An error occurred while retrieving employees.", ex);
             }
         }
     }
