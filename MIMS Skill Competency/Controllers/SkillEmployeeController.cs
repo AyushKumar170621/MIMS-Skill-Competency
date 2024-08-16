@@ -21,80 +21,135 @@ namespace MIMS_Skill_Competency.Controllers
         [HttpGet("employees")]
         public ActionResult<IEnumerable<Employee>> GetAllEmployee()
         {
-            var obj = _employeeRepo.GetAllEmployee();
-            if (obj == null)
+            try
             {
-                return NotFound();
+                var obj = _employeeRepo.GetAllEmployee();
+                if (obj == null)
+                {
+                    return NotFound("No records found.");
+                }
+                return Ok(obj);
             }
-            return Ok(obj);
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
+
         }
 
 
         [HttpGet("employee/{id}")]
         public ActionResult<Employee> GetEmployeeById(int id)
         {
-            var obj = _employeeRepo.GetEmployeeById(id);
-            if (obj == null)
+            try
             {
-                return NotFound();
+                var obj = _employeeRepo.GetEmployeeById(id);
+                if (obj.Count() == 0)
+                {
+                    return NotFound("No record found with this employee id.");
+                }
+                return Ok(obj);
             }
-            return Ok(obj);
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
         }
 
         [HttpGet("manager/employee/{managerId}")]
         public ActionResult<IEnumerable<Employee>> getMangersEmployee(int managerId)
         {
-            var obj = _employeeRepo.getMangersEmployee(managerId);
-            
-            if (obj == null)
+            try
             {
-                return NotFound();
+                var obj = _employeeRepo.getMangersEmployee(managerId);
+                if (obj.Count() == 0)
+                {
+                    return NotFound("No record found with this manager id.");
+                }
+                return Ok(obj);
             }
-            return Ok(obj);
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
         }
 
+   
         [HttpGet("skillDomainType/")]
         public ActionResult<IEnumerable<string>> GetSkillDomainType()
         {
-            var skillDomainTypes = _skillRepo.GetSkillDomainType();
-            if (skillDomainTypes == null || !skillDomainTypes.Any())
+            try
             {
-                return NotFound();
-            }
+                var skillDomainTypes = _skillRepo.GetSkillDomainType();
 
-            return Ok(skillDomainTypes);
+                if (skillDomainTypes.Count() == 0 || !skillDomainTypes.Any())
+                {
+                    return NotFound("No record found.");
+                }
+
+                return Ok(skillDomainTypes);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
         }
+
 
         [HttpGet("skillDomains/")]
-        public ActionResult<IEnumerable<SkillDomain>> GetAllSkillDomain() { 
-            var skillDom = _skillRepo.getSkillDomains();
-            if(skillDom == null || !skillDom.Any())
+        public ActionResult<IEnumerable<SkillDomain>> GetAllSkillDomain() {
+            try
             {
-                return NotFound();
+                var skillDom = _skillRepo.getSkillDomains();
+                if (skillDom.Count() == 0 || !skillDom.Any())
+                {
+                    return NotFound("No record found.");
+                }
+                return Ok(skillDom);
             }
-            return Ok(skillDom);
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
         }
+
 
         [HttpPost("DomainSkill/")]
         public ActionResult<Skill> GetSkillByDomain([FromBody] List<SkillDomain> domain)
         {
-            var skill = _skillRepo.getSkillBySkillDomain(domain);
-            if(skill == null || !skill.Any())
+            try
             {
-                return NotFound();
+                var skill = _skillRepo.getSkillBySkillDomain(domain);
+                if (skill.Count() == 0 || !skill.Any())
+                {
+                    return NotFound("No record found for the provided skill domains.");
+                }
+                return Ok(skill);
             }
-            return Ok(skill);
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
         }
+
+
         [HttpGet("skillLevel/")]
         public ActionResult<IEnumerable<string>> GetSkillLevel()
         {
-            var skillLevel = _skillRepo.GetSkillLevel();
-            if (skillLevel == null || !skillLevel.Any())
+            try
             {
-                return NotFound();
-            }
+                var skillLevel = _skillRepo.GetSkillLevel();
+                if (skillLevel.Count() == 0 || !skillLevel.Any())
+                {
+                    return NotFound("No record found.");
+                }
 
-            return Ok(skillLevel);
+                return Ok(skillLevel);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
         }
 
         [HttpGet("search")]
@@ -108,27 +163,36 @@ namespace MIMS_Skill_Competency.Controllers
      [FromQuery] int? experienceMonth = null) // Nullable int
         {
             // Initialize lists if they are null
-            employeeIds = employeeIds ?? new List<int>();
-            skillDomainTypes = skillDomainTypes ?? new List<int>();
-            skillDomains = skillDomains ?? new List<int>();
-            skills = skills ?? new List<int>();
-            skillLevels = skillLevels ?? new List<int>();
+            try
+            {
+                employeeIds = employeeIds ?? new List<int>();
+                skillDomainTypes = skillDomainTypes ?? new List<int>();
+                skillDomains = skillDomains ?? new List<int>();
+                skills = skills ?? new List<int>();
+                skillLevels = skillLevels ?? new List<int>();
 
-            // Call the repository method with the parameters
-            var employees = _skillRepo.SearchEmployees(
-                employeeIds,
-                skillDomainTypes,
-                skillDomains,
-                skills,
-                skillLevels,
-                experienceYears,
-                experienceMonth);
+                // Call the repository method with the parameters
+                var employees = _skillRepo.SearchEmployees(
+                    employeeIds,
+                    skillDomainTypes,
+                    skillDomains,
+                    skills,
+                    skillLevels,
+                    experienceYears,
+                    experienceMonth);
 
-            return Ok(employees);
+                if (employees == null)
+                {
+                    return NotFound();
+                }
+
+                return Ok(employees);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
+
         }
-
-
-
-
     }
 }

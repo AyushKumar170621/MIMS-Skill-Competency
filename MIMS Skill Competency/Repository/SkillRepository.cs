@@ -30,16 +30,11 @@ namespace MIMS_Skill_Competency.Repository
 
                     var result = dbConnection.Query<SkillDomainType>(query, commandType: CommandType.StoredProcedure).ToList();
 
-                    // Return the results (including an empty list if no domain types are found)
                     return result;
                 }
             }
             catch (Exception ex)
             {
-                // Log the exception details here
-                // For example: _logger.LogError(ex, "An error occurred while fetching skill domain types.");
-
-                // Rethrow or handle the exception based on your error handling strategy
                 throw new ApplicationException("An error occurred while fetching skill domain types.", ex);
             }
         }
@@ -57,7 +52,6 @@ namespace MIMS_Skill_Competency.Repository
 
                     string query = "GetSkillLevelDetails";
 
-                    // Execute the query and return the results
                     var result = dbConnection.Query<SkillLevel>(query, commandType: CommandType.StoredProcedure).ToList();
 
                     return result;
@@ -65,10 +59,6 @@ namespace MIMS_Skill_Competency.Repository
             }
             catch (Exception ex)
             {
-                // Log the exception details here
-                // For example: _logger.LogError(ex, "An error occurred while fetching skill levels.");
-
-                // Rethrow or handle the exception based on your error handling strategy
                 throw new ApplicationException("An error occurred while fetching skill levels.", ex);
             }
         }
@@ -116,7 +106,6 @@ namespace MIMS_Skill_Competency.Repository
 
                     string query = "GetAllSkillDomainDetails";
 
-                    // Execute the query and return the results
                     var result = dbConnection.Query<SkillDomain>(query, commandType: CommandType.StoredProcedure).ToList();
 
                     return result;
@@ -124,42 +113,10 @@ namespace MIMS_Skill_Competency.Repository
             }
             catch (Exception ex)
             {
-                // Log the exception details here
-                // For example: _logger.LogError(ex, "An error occurred while fetching skill domains.");
-
-                // Rethrow or handle the exception based on your error handling strategy
                 throw new ApplicationException("An error occurred while fetching skill domains.", ex);
             }
         }
 
-        //public ICollection<Employee> getMangersEmployee(int managerId)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
-        //public ICollection<EmployeeSkill> SearchEmployees(
-        // //int managerId,
-        // List<string> employeeNames = null,
-        // List<string> skillDomainTypes = null,
-        // List<string> skillDomains = null,
-        // List<string> skills = null,
-        // List<string> skillLevels = null,
-        // string experienceYears = null,
-        // string experienceMonth = null)
-        //{
-        //    using (IDbConnection dbConnection = _dbcontext.CreateConnection())
-        //    {
-
-        //        //var parameters = new DynamicParameters();
-        //        //parameters.Add("@DomainIds", table.AsTableValuedParameter("dbo.IntListType"));
-
-
-        //        string query = "GetSkillEmployeeDetails1";
-
-        //        return dbConnection.Query<EmployeeSkill>(query, commandType: CommandType.StoredProcedure).ToList();
-        //    }
-
-        //}
 
         public ICollection<EmployeeSkill> SearchEmployees(
         List<int> employeeIds,
@@ -167,11 +124,9 @@ namespace MIMS_Skill_Competency.Repository
         List<int> skillDomains,
         List<int> skills,
         List<int> skillLevels,
-        int? experienceYears = null, // Nullable int
-        int? experienceMonth = null) // Nullable int
+        int? experienceYears = null,
+        int? experienceMonth = null) 
         {
-            //var a = employeeIds;
-            //Console.WriteLine(a);
             DataTable ConvertToDataTable(List<int> list)
             {
                 var table = new DataTable();
@@ -194,9 +149,6 @@ namespace MIMS_Skill_Competency.Repository
                         throw new InvalidOperationException("Failed to create a database connection.");
                     }
                     var parameters = new DynamicParameters();
-
-                    // Function to convert List<int> to DataTable
-                    
 
                     // Add table-valued parameters
                     //parameters.Add("@SEmployeeId", ConvertToDataTable(employeeIds).AsTableValuedParameter("dbo.IntListType"));

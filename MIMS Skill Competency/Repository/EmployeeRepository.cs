@@ -64,7 +64,7 @@ namespace MIMS_Skill_Competency.Repository
             }
             catch(Exception ex)
             {
-                throw new ApplicationException(ex.Message, ex);
+                throw new ApplicationException("An error occurred while retrieving employee by emp id.", ex);
             }
             
         }
@@ -103,7 +103,7 @@ namespace MIMS_Skill_Competency.Repository
             {
                 // LogError(ex);
 
-                throw new ApplicationException("An error occurred while retrieving employees.", ex);
+                throw new ApplicationException("An error occurred while retrieving employees under any specific manager id.", ex);
             }
         }
     }
