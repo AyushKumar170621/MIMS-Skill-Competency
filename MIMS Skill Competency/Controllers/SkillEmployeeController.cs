@@ -24,7 +24,7 @@ namespace MIMS_Skill_Competency.Controllers
             try
             {
                 var obj = _employeeRepo.GetAllEmployee();
-                if (obj == null)
+                if (obj.Count() == 0)
                 {
                     return NotFound("No records found.");
                 }
