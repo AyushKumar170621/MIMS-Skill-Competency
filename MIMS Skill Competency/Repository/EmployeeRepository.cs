@@ -27,7 +27,7 @@ namespace MIMS_Skill_Competency.Repository
                     string query = "GetAllEmployees";
                     var result = dbConnection.Query<Employee>(query, commandType: CommandType.StoredProcedure).ToList();
 
-                    return result ?? new List<Employee>(); // Ensure the result is never null
+                    return result ?? new List<Employee>(); 
                 }
             }
             catch (Exception ex)
@@ -38,11 +38,35 @@ namespace MIMS_Skill_Competency.Repository
 
         public IEnumerable<Employee> GetEmployeeById(int id)
         {
-            using (IDbConnection dbConnection = _dbcontext.CreateConnection())
+            if (id <= 0)
             {
-                string query = "SELECT * FROM Employee WHERE employeeid = @EmpId";
-                return dbConnection.Query<Employee>(query, new { EmpId = id }).ToList();
+                throw new ArgumentException("ID must be greater than zero.", nameof(id));
             }
+            try
+            {
+                using (IDbConnection dbConnection = _dbcontext.CreateConnection())
+                {
+                    if (dbConnection == null)
+                    {
+                        throw new InvalidOperationException("Unable to create a database connection.");
+                    }
+                    string query = "SELECT * FROM Employee WHERE employeeid = @EmpId";
+                    var employee = dbConnection.Query<Employee>(query, new { EmpId = id }).ToList();
+
+                    if (employee == null)
+                    {
+                        // You can decide whether to throw an exception or return null
+                        throw new KeyNotFoundException($"No employee found with ID {id}.");
+                    }
+
+                    return employee;
+                }
+            }
+            catch(Exception ex)
+            {
+                throw new ApplicationException(ex.Message, ex);
+            }
+            
         }
 
         public IEnumerable<Employee> getMangersEmployee(int managerId)
@@ -77,11 +101,8 @@ namespace MIMS_Skill_Competency.Repository
             }
             catch (Exception ex)
             {
-                // Log the exception (replace with your logging mechanism)
                 // LogError(ex);
 
-                // Optionally, handle the exception or rethrow it based on your needs.
-                // For example, you might rethrow or wrap it in a custom exception:
                 throw new ApplicationException("An error occurred while retrieving employees.", ex);
             }
         }
