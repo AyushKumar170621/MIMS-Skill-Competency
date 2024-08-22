@@ -50,12 +50,12 @@ namespace MIMS_Skill_Competency.Repository
                     {
                         throw new InvalidOperationException("Unable to create a database connection.");
                     }
-                    string query = "SELECT * FROM Employee WHERE employeeid = @EmpId";
-                    var employee = dbConnection.Query<Employee>(query, new { EmpId = id }).ToList();
-
+                    var parameters = new DynamicParameters();
+                    parameters.Add("EmployeeId", id, DbType.Int32);
+                    var employee = dbConnection.Query<Employee>("GetEmployeeDetails", parameters, commandType: CommandType.StoredProcedure).ToList();
+                    
                     if (employee == null)
                     {
-                        // You can decide whether to throw an exception or return null
                         throw new KeyNotFoundException($"No employee found with ID {id}.");
                     }
 
