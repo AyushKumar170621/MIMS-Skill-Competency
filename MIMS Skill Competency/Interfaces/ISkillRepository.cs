@@ -17,7 +17,7 @@ namespace MIMS_Skill_Competency.Interfaces
         List<int> skillDomains ,
         List<int> skills,
         List<int> skillLevels,
-        int? experienceYears = null, // Nullable int
-        int? experienceMonth = null); // Nullable int
+        int? minExperience = null,
+        int? MaxExperience = null); 
     }
 }

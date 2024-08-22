@@ -2,13 +2,12 @@
 {
     public class SearchEmpSkill
     {
-        public List<Employee> Employees { get; set; }
-        public List<string> DomainType { get; set; }
-        public List<string> SkillDomain { get; set; }
-        public List<string> Skill { get; set; }
-
-        public List<string> SkillLevel { get; set; }
-        public int ExperienceMonth { get; set; }
-        public int ExperienceYear { get; set; }
+        public List<int> EmployeeIds { get; set; } = new List<int>();
+        public List<int> SkillDomainTypes { get; set; } = new List<int>();
+        public List<int> SkillDomains { get; set; } = new List<int>();
+        public List<int> Skills { get; set; } = new List<int>();
+        public List<int> SkillLevels { get; set; } = new List<int>();
+        public int? MinExperience { get; set; }
+        public int? MaxExperience { get; set; }
     }
 }
