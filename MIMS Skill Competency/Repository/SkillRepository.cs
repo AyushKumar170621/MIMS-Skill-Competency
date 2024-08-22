@@ -124,8 +124,8 @@ namespace MIMS_Skill_Competency.Repository
         List<int> skillDomains,
         List<int> skills,
         List<int> skillLevels,
-        int? experienceYears = null,
-        int? experienceMonth = null) 
+        int? minExperience = null,
+        int? maxExperience = null) 
         {
             DataTable ConvertToDataTable(List<int> list)
             {
@@ -150,20 +150,19 @@ namespace MIMS_Skill_Competency.Repository
                     }
                     var parameters = new DynamicParameters();
 
-                    // Add table-valued parameters
-                    //parameters.Add("@SEmployeeId", ConvertToDataTable(employeeIds).AsTableValuedParameter("dbo.IntListType"));
+                    // Adding table-valued parameters
                     parameters.Add("@EmployeeId", ConvertToDataTable(employeeIds).AsTableValuedParameter("dbo.IntListType"));
                     parameters.Add("@DomainID", ConvertToDataTable(skillDomains).AsTableValuedParameter("dbo.IntListType"));
                     parameters.Add("@SkillId", ConvertToDataTable(skills).AsTableValuedParameter("dbo.IntListType"));
                     parameters.Add("@LevelId", ConvertToDataTable(skillLevels).AsTableValuedParameter("dbo.IntListType"));
                     parameters.Add("@DomainType", ConvertToDataTable(skillDomainTypes).AsTableValuedParameter("dbo.IntListType"));
 
-                    // Add scalar parameters
-                    parameters.Add("@ExpYear", experienceYears.HasValue ? (object)experienceYears.Value : 0, DbType.Int32);
-                    parameters.Add("@ExpMonth", experienceMonth.HasValue ? (object)experienceMonth.Value : 0, DbType.Int32);
+                    // Adding scalar parameters
+                    parameters.Add("@ExpFromYears", minExperience.HasValue ? (object)minExperience.Value : 0, DbType.Int32);
+                    parameters.Add("@ExpToYears", maxExperience.HasValue ? (object)maxExperience.Value : 0, DbType.Int32);
 
                     // Execute stored procedure
-                    var query = "GetSkillEmployeeDetails1";
+                    var query = "GetDetailedSkillEmployeeValid";
                     return dbConnection.Query<EmployeeSkill>(query, parameters, commandType: CommandType.StoredProcedure).ToList();
                 }
 

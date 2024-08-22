@@ -2,12 +2,16 @@
 {
     public class Comment
     {
-        public int CommentId { get; set; } // Primary key for the Comment model
-        public string Description { get; set; } // Detailed description of the comment
-        public DateTime Time { get; set; } // Time of the comment
-        public int SkillId { get; set; } // Foreign key referencing EmployeeSkill
 
-        // Navigation property to access the EmployeeSkill if needed
+        public int CommentId { get; set; } // Add primary key for Comment
+        public string Comments { get; set; }
+        public string CreatedBy { get; set; }
+        public DateTime CreatedOn { get; set; }
+
+        // Foreign key
+        public int EmployeeSkillId { get; set; }
+
+        // Navigation property
         public EmployeeSkill EmployeeSkill { get; set; }
     }
 }

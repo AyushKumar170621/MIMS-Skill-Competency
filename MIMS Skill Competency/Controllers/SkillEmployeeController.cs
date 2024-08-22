@@ -152,34 +152,22 @@ namespace MIMS_Skill_Competency.Controllers
             }
         }
 
-        [HttpGet("search")]
-        public ActionResult<ICollection<EmployeeSkill>> SearchEmployees(
-     [FromQuery] List<int> employeeIds = null,
-     [FromQuery] List<int> skillDomainTypes = null,
-     [FromQuery] List<int> skillDomains = null,
-     [FromQuery] List<int> skills = null,
-     [FromQuery] List<int> skillLevels = null,
-     [FromQuery] int? experienceYears = null, // Nullable int
-     [FromQuery] int? experienceMonth = null) // Nullable int
+        [HttpPost("search")]
+        public ActionResult<ICollection<EmployeeSkill>> SearchEmployees([FromBody] SearchEmpSkill searchCriteria)
         {
-            // Initialize lists if they are null
+           
+
             try
             {
-                employeeIds = employeeIds ?? new List<int>();
-                skillDomainTypes = skillDomainTypes ?? new List<int>();
-                skillDomains = skillDomains ?? new List<int>();
-                skills = skills ?? new List<int>();
-                skillLevels = skillLevels ?? new List<int>();
-
-                // Call the repository method with the parameters
+               
                 var employees = _skillRepo.SearchEmployees(
-                    employeeIds,
-                    skillDomainTypes,
-                    skillDomains,
-                    skills,
-                    skillLevels,
-                    experienceYears,
-                    experienceMonth);
+                    searchCriteria.EmployeeIds,
+                    searchCriteria.SkillDomainTypes,
+                    searchCriteria.SkillDomains,
+                    searchCriteria.Skills,
+                    searchCriteria.SkillLevels,
+                    searchCriteria.MinExperience,
+                    searchCriteria.MaxExperience);
 
                 if (employees == null)
                 {
@@ -192,7 +180,8 @@ namespace MIMS_Skill_Competency.Controllers
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
             }
-
         }
+
+
     }
 }
