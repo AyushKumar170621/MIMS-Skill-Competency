@@ -93,7 +93,7 @@ namespace MIMS_Skill_Competency.Repository
                     if (employees == null || !employees.Any())
                     {
                         // Depending on the calling code, you might want to return an empty list or handle this differently.
-                        return new List<Employee>(); // Return an empty list if no employees are found.
+                        return new List<Employee>();// Return an empty list if no employees are found.
                     }
 
                     return employees;

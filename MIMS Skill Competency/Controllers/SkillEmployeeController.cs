@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Mvc;
 using MIMS_Skill_Competency.Interfaces;
 using MIMS_Skill_Competency.Models;
+using MIMS_Skill_Competency.Mappers;
+using System.Collections.Generic;
 
 namespace MIMS_Skill_Competency.Controllers
 {
@@ -16,25 +18,6 @@ namespace MIMS_Skill_Competency.Controllers
         {
             _skillRepo = skillRepo;
             _employeeRepo = employeeRepo;
-        }
-
-        [HttpGet("employees")]
-        public ActionResult<IEnumerable<Employee>> GetAllEmployee()
-        {
-            try
-            {
-                var obj = _employeeRepo.GetAllEmployee();
-                if (obj.Count() == 0)
-                {
-                    return NotFound("No records found.");
-                }
-                return Ok(obj);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
-            }
-
         }
 
 
@@ -56,12 +39,45 @@ namespace MIMS_Skill_Competency.Controllers
             }
         }
 
+        [HttpGet("employee")]
+        public ActionResult<IEnumerable<Employee>> GetEmployees(bool isAdmin, int? managerId = null)
+        {
+            try
+            {
+                IEnumerable<Employee> obj;
+
+                if (isAdmin)
+                {
+                    obj = _employeeRepo.GetAllEmployee();
+                }
+                else if (managerId.HasValue)
+                {
+                    obj = (IEnumerable<Employee>) _employeeRepo.getMangersEmployee(managerId.Value).Select(o => o.ToEmployeeDto());
+                }
+                else
+                {
+                    return BadRequest("Manager ID is required for non-admin users.");
+                }
+
+                if (!obj.Any())
+                {
+                    return NotFound("No records found.");
+                }
+
+                return Ok(obj);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, ex.Message);
+            }
+        }
+
         [HttpGet("manager/employee/{managerId}")]
         public ActionResult<IEnumerable<Employee>> getMangersEmployee(int managerId)
         {
             try
             {
-                var obj = _employeeRepo.getMangersEmployee(managerId);
+                var obj = _employeeRepo.getMangersEmployee(managerId).Select(o => o.ToEmployeeDto());
                 if (obj.Count() == 0)
                 {
                     return NotFound("No record found with this manager id.");
@@ -74,7 +90,7 @@ namespace MIMS_Skill_Competency.Controllers
             }
         }
 
-   
+
         [HttpGet("skillDomainType/")]
         public ActionResult<IEnumerable<string>> GetSkillDomainType()
         {
