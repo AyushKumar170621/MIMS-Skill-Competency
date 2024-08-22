@@ -163,7 +163,7 @@ namespace MIMS_Skill_Competency.Repository
                     parameters.Add("@ExpToYears", maxExperience.HasValue ? (object)maxExperience.Value : 0, DbType.Int32);
 
                     // Execute stored procedure
-                    var query = "GetDetailedSkillEmployeeValid";
+                    var query = "GetDetailedSkillEmployeeValid1";
                     return dbConnection.Query<EmployeeSkill>(query, parameters, commandType: CommandType.StoredProcedure).ToList();
                 }
 
