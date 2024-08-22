@@ -1,4 +1,5 @@
-﻿using MIMS_Skill_Competency.Models;
+﻿using MIMS_Skill_Competency.Dtos;
+using MIMS_Skill_Competency.Models;
 
 namespace MIMS_Skill_Competency.Interfaces
 {
@@ -6,7 +7,7 @@ namespace MIMS_Skill_Competency.Interfaces
     {
         public ICollection<SkillDomain> getSkillDomains();
 
-        public ICollection<Skill> getSkillBySkillDomain(List<SkillDomain> skillDomains);    
+        public ICollection<Skill> getSkillBySkillDomain(List<int> skillDomains);    
         IEnumerable<SkillDomainType> GetSkillDomainType();
         IEnumerable<SkillLevel> GetSkillLevel();
 

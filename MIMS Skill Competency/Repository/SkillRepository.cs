@@ -1,6 +1,7 @@
 ﻿using Dapper;
 using Microsoft.AspNetCore.Mvc;
 using MIMS_Skill_Competency.Data;
+using MIMS_Skill_Competency.Dtos;
 using MIMS_Skill_Competency.Interfaces;
 using MIMS_Skill_Competency.Models;
 using System.Data;
@@ -63,13 +64,13 @@ namespace MIMS_Skill_Competency.Repository
             }
         }
 
-        public ICollection<Skill> getSkillBySkillDomain(List<SkillDomain> skillDomains)
+        public ICollection<Skill> getSkillBySkillDomain(List<int> skillDomains)
         {
             var table = new DataTable();
             table.Columns.Add("Item", typeof(int));
             foreach (var sd in skillDomains)
             {
-                table.Rows.Add(sd.DomainId);
+                table.Rows.Add(sd);
             }
             try
             {
